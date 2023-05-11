@@ -2,8 +2,19 @@
 <html>
 
 <head>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <title>Shutter Alaska LLC</title>
     <style>
+        @font-face {
+            font-family: 'Elite';
+            src: url('fonts/specialElite-Regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('fonts/HelveticaCEBold.otf') format('truetype');
+        }
+
         /* Style for the header row */
         .header-row {
             position: fixed;
@@ -37,6 +48,26 @@
             /* Make the text bold */
         }
 
+        .logo ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo li {
+            margin-right: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            font-family: 'Elite';
+        }
+
+        .logo img {
+            width: 45px;
+            height: 45px;
+        }
+
         /* Style for the navigation menu */
         nav ul {
             list-style: none;
@@ -47,6 +78,13 @@
             /* Remove any default padding */
             display: flex;
             /* Use flexbox to align the items */
+        }
+
+        .about-section ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
         }
 
         nav li {
@@ -63,6 +101,18 @@
             /* Add some padding */
             border-radius: 5px;
             /* Add some rounded corners */
+        }
+
+        .logo a {
+            color: #fff;
+            /* Set the text color to white */
+            text-decoration: none;
+            /* Remove any default text decoration */
+            padding: 5px;
+            /* Add some padding */
+            border-radius: 5px;
+            /* Add some rounded corners */
+            flex: 1;
         }
 
         nav a:hover {
@@ -98,7 +148,17 @@
 
 <body>
     <div class="header-row">
-        <div class="logo">Shutter Alaska</div>
+        <div class="logo">
+            <ul>
+                <li>
+                    <img src="images/logo.png" alt="Logo image"></img>
+                </li>
+                <li>
+                    <a>Shutter Alaska</a>
+                </li>
+
+            </ul>
+        </div>
         <div class="motto">Capturing the wild beauty of Alaska, one shutter at a time.</div>
         <nav>
             <ul>
@@ -113,31 +173,43 @@
             style="width: 1500px; height: 600px; display: block; margin: 0 auto;">
     </div>
     <div class="about-section">
-        <h3 class="title" id="about">About Us</h3>
-      <p>Welcome to Shutter Alaska! My name is Ethan and I am the sole photographer behind this one-man show. I
-            specialize
-            in capturing the wild beauty of Alaska through my lens, and I'm here to offer you a range of photography
-            services that
-            will help you capture your own piece of Alaska's stunning landscapes.</p>
-        <p>At Shutter Alaska, I offer a range of photography services that are perfect for anyone who wants to capture
-            their own
-            unique Alaskan experience. From family portraits to adventure photography, I've got you covered. I offer
-            on-location
-            photo shoots throughout Alaska, whether it's in the mountains, by the ocean, or anywhere in between.</p>
-        <p>My goal is to capture the essence of Alaska in every photo I take. Whether you're looking for a beautiful
-            landscape shot
-            or a candid family portrait, I'll work with you to create images that you'll cherish for a lifetime. I
-            believe that
-            photography is all about telling a story, and I'm passionate about capturing the stories that make Alaska so
-            special.</p>
+        <ul>
+            <li>
+                <h3 class="title" id="about">About Us</h3>
+                <p>Welcome to Shutter Alaska! My name is Ethan and I am the sole photographer behind this one-man show.
+                    I
+                    specialize
+                    in capturing the wild beauty of Alaska through my lens, and I'm here to offer you a range of
+                    photography
+                    services that
+                    will help you capture your own piece of Alaska's stunning landscapes.</p>
+                <p>At Shutter Alaska, I offer a range of photography services that are perfect for anyone who wants to
+                    capture
+                    their own
+                    unique Alaskan experience. From family portraits to adventure photography, I've got you covered. I
+                    offer
+                    on-location
+                    photo shoots throughout Alaska, whether it's in the mountains, by the ocean, or anywhere in between.
+                </p>
+                <p>My goal is to capture the essence of Alaska in every photo I take. Whether you're looking for a
+                    beautiful
+                    landscape shot
+                    or a candid family portrait, I'll work with you to create images that you'll cherish for a lifetime.
+                    I
+                    believe that
+                    photography is all about telling a story, and I'm passionate about capturing the stories that make
+                    Alaska so
+                    special.</p>
 
-        <p>So if you're looking for a photographer who is passionate about Alaska and dedicated to capturing the beauty
-            of the Last
-            Frontier, look no further than Shutter Alaska. Contact me today to learn more about my services and to
-            schedule your own
-            photo shoot. I can't wait to work with you!</p>
-
-
+                <p>So if you're looking for a photographer who is passionate about Alaska and dedicated to capturing the
+                    beauty
+                    of the Last
+                    Frontier, look no further than Shutter Alaska. Contact me today to learn more about my services and
+                    to
+                    schedule your own
+                    photo shoot. I can't wait to work with you!</p>
+            </li>
+        </ul>
     </div>
     <!-- Add the rest of your page content here -->
 </body>
